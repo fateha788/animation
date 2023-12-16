@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.box{
+    height: 400px;
+    width: 400px;
+    background-color: red;
+    animation-name: bgColor;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 5s;
+}
+
+@keyframes bgColor{
+    from{
+        background-color: blue;
+    }
+    to{
+        background-color: red;
+    }
+}
+button{
+     margin: 20px;
+     padding: 20px;
+     font-size: 25px;
+     background-color: chartreuse;
+     border: none;
+     border-radius: 10px;
+     cursor: pointer;
+    
+}
+    @keyframes button{
+        from{
+            background-color: darkorange;
+            color: aliceblue;
+        }
+        to{
+            background-color: darkred;
+            color: aliceblue;
+        }
+    }
+
+button:hover{
+    background-color: yellow;
+    transition: all .4s ease;
+    animation-name: button;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+    animation-direction: alternate;
+}
